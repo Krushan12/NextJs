@@ -1,56 +1,39 @@
 export default function Projects() {
-    const projects = [
+  const projects = [
       {
-        title: "Kanban Board",
-        description: "Developed a responsive Kanban board with drag-and-drop functionality using ReactJS and TailwindCSS.",
-        tech: ["ReactJS", "TailwindCSS"],
-        links: {
-          github: "GitHub Link",
-          demo: "Live Demo"
-        }
+          title: "Kanban Board",
+          description:
+              "Developed a responsive Kanban board with drag-and-drop functionality using ReactJS and TailwindCSS.",
+          tech: ["React", "TailwindCSS"],
       },
       {
-        title: "Spotify Clone",
-        description: "Built a Spotify-inspired web app replicating playlists, music search, and responsive design.",
-        tech: ["ReactJS", "API Integration"],
-        links: {
-          github: "GitHub Link"
-        }
+          title: "E-commerce Platform",
+          description: "Built a full-stack e-commerce platform using the MERN stack with secure payment integration.",
+          tech: ["MongoDB", "Express", "React", "Node.js"],
       },
-      // Add other projects similarly
-    ]
-  
-    return (
-      <section id="projects" className="py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl text-black font-semibold mb-3">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((tech, i) => (
-                  <span key={i} className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex space-x-4">
-                {project.links.github && (
-                  <a href={project.links.github} className="text-blue-500 hover:underline">
-                    GitHub
-                  </a>
-                )}
-                {project.links.demo && (
-                  <a href={project.links.demo} className="text-blue-500 hover:underline">
-                    Live Demo
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    )
-  }
-  
+  ];
+
+  return (
+      <div className="pt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold mb-8">Projects</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                  <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-md">
+                      <h2 className="text-xl font-semibold">{project.title}</h2>
+                      <p className="mt-2 text-gray-300">{project.description}</p>
+                      <div className="mt-4">
+                          {project.tech.map((tech, i) => (
+                              <span
+                                  key={i}
+                                  className="inline-block bg-gray-700 text-sm text-white px-2 py-1 rounded-full mr-2"
+                              >
+                                  {tech}
+                              </span>
+                          ))}
+                      </div>
+                  </div>
+              ))}
+          </div>
+      </div>
+  );
+}
