@@ -6,15 +6,12 @@ export default function Contact() {
               <p className="mb-4">
                   <strong>Email:</strong>{" "}
                   <a href="mailto:waghkrushant@iitgn.ac.in" className="text-blue-500 hover:underline">
-                      waghkrushant@iitgn.ac.in
+                      waghkrushant@gmail.com
                   </a>
-              </p>
-              <p className="mb-4">
-                  <strong>Phone:</strong> 8767821091
               </p>
               <div className="flex space-x-4">
                   <a
-                      href="https://linkedin.com/in/yourprofile"
+                      href="https://www.linkedin.com/in/krushant-wagh-703688228"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"
@@ -22,7 +19,7 @@ export default function Contact() {
                       LinkedIn
                   </a>
                   <a
-                      href="https://github.com/yourprofile"
+                      href="https://github.com/Krushan12"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"

@@ -1,21 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}"
   ],
   theme: {
     extend: {
       colors: {
-        background: "#13151a",
-        foreground: "#ffffff",
-        card: "#1f2937",
-        "card-foreground": "#ffffff",
-        primary: "#3b82f6",
-        "primary-foreground": "#ffffff",
+        'background': '#000000',
+        'surface': '#0D0D0D',
+        'surface-hover': '#1A1A1A',
+        'border': '#333333',
+        'accent': '#FF8C42',
+        'accent-hover': '#E67A33'
       },
+      fontFamily: {
+        mono: ['var(--font-mono)']
+      }
     },
   },
   plugins: [],
-};
+}
