@@ -13,7 +13,7 @@ export default function Hero() {
         </p>
         <div className="flex space-x-6">
           <a 
-            href="waghkrushant@gmail.com" 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=waghkrushant@gmail.com" target="_blank" 
             className="bg-primary hover:bg-primary-2 text-white px-6 py-3 rounded-lg transition-colors duration-300"
           >
             Contact Me

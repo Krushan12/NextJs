@@ -1,25 +1,30 @@
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const robotoMono = Roboto_Mono({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-mono",
 });
 
 export const metadata = {
-  title: "Krushant Wagh | Portfolio",
-  description: "Materials Engineering student at IIT Gandhinagar with a passion for web development.",
+  title: "Kisan Kumavat",
+  description: "Hi, I am Kisan. I build things that lives on internet.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${robotoMono.variable} font-mono bg-secondary text-white`}>
-        <Navbar />
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {children}
-        </main>
+    <html lang="en" data-theme="default">
+      <body
+        className={`max-w-3xl px-6 mx-auto bg-secondary text-white ${robotoMono.variable} font-mono`}
+      >
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
