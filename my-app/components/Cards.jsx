@@ -1,5 +1,6 @@
-import Card from "../Card";
-import { H2 } from "../UI/Typography";
+
+import { H2 } from "./UI/Typography";
+import Card from "./Card";
 
 const Cards = ({ sectionTitle, posts }) => {
   return (
