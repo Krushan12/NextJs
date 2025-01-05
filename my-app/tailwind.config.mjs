@@ -13,7 +13,8 @@ module.exports = {
         'surface-hover': '#1A1A1A',
         'border': '#333333',
         'accent': '#FF8C42',
-        'accent-hover': '#E67A33'
+        'accent-hover': '#E67A33',
+        'primary': 'hsl(28, 100%, 58%)',  // Add this to define primary color
       },
       fontFamily: {
         mono: ['var(--font-mono)']

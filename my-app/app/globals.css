@@ -61,7 +61,7 @@
   }
 
   .primary-border {
-    @apply border-b-2 border-dashed border-primary;
+    @apply border-b-2 border-dashed border-primary; /* Use the newly defined primary color */
   }
 }
 

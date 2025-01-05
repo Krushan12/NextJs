@@ -12,15 +12,15 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Kisan Kumavat",
-  description: "Hi, I am Kisan. I build things that lives on internet.",
+  title: "Krushant Wagh",
+  description: "Hi, I am Krushant. I build things that lives on internet.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="default">
       <body
-        className={`max-w-3xl px-6 mx-auto bg-secondary text-white ${robotoMono.variable} font-mono`}
+        className={`max-w-3xl px-6 bg-black mx-auto bg-secondary text-white ${robotoMono.variable} font-mono`}
       >
         <Header />
         <main>{children}</main>

@@ -12,9 +12,9 @@ export const navLinks = [
     href: "/blog",
   },
   {
-    name: "work",
-    title: "Work",
-    href: "/work",
+    name: "projects",
+    title: "Project",
+    href: "/projects",
   },
   {
     name: "space",

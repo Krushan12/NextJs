@@ -2,25 +2,23 @@ import Cards from "@/components/Cards";
 import Articles from "@/components/Cards";
 import { H1, P } from "@/components/UI/Typography";
 import { socialLinks } from "@/constants";
-import { getAllPostsMeta } from "@/utils";
+import "./globals.css";
+
+
 
 // Removes email href
 socialLinks.pop();
 
 export default function Home() {
-  const fetchPosts = async () => {
-    const posts = await getAllPostsMeta();
-    return posts;
-  };
+  
 
-  const posts = fetchPosts();
 
   return (
-    <div>
+   
       <section className="mb-14">
-        <H1>Kisan Kumavat</H1>
+        <H1>Krushant Wagh</H1>
         <P>
-          Hello there! I am Kisan, a passionate Software engineer from India
+          Hello there! I am Krushant, a passionate Software engineer from India
           with a flair for crafting immersive web experiences.
         </P>
         <P>
@@ -48,7 +46,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Cards posts={posts} sectionTitle="Current articles" />
-    </div>
+      
+   
   );
 }

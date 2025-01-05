@@ -1,9 +1,9 @@
 import Cards from "@/components/Cards";
 import { H1, P } from "@/components/UI/Typography";
-import { getAllPostsMeta } from "@/utils";
+
 
 const BlogPage = async () => {
-  const posts = await getAllPostsMeta();
+  
 
   return (
     <div>
@@ -14,7 +14,7 @@ const BlogPage = async () => {
           tools like React, Next.js, TypeScript and ES6 features.
         </P>
       </section>
-      <Cards sectionTitle="Recent articles" posts={posts} />
+      
     </div>
   );
 };

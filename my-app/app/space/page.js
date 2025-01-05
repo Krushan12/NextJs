@@ -1,15 +1,11 @@
 import { User } from "react-feather";
 
 import { H1, H2, P } from "@/components/UI/Typography";
-import TrackIframe from "@/components/SpotifyIframe/TrackIframe";
-import { getSpotifyTopItems } from "@/services/spotify-services";
+
 import { books } from "@/constants";
 
 const SpacePage = async () => {
-  const tracks = await getSpotifyTopItems("tracks", {
-    time_range: "medium_term",
-    limit: 5,
-  });
+ 
 
   return (
     <div>
@@ -39,16 +35,8 @@ const SpacePage = async () => {
           </ul>
         </div>
       </div>
-      <div className="mb-14">
-        <H2>My Top Tracks</H2>
-        <div className="grid md:grid-cols-2 gap-4">
-          {tracks.map((track) => (
-            <div className="h-[80px]" key={track.id}>
-              <TrackIframe trackId={track.id} />
-            </div>
-          ))}
-        </div>
-      </div>
+      
+      
     </div>
   );
 };
